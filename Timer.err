@@ -1,0 +1,4 @@
+Warning[2058] C:\Users\orpaz\Desktop\Space-invaders\Timer.c 57 : call of function without prototype
+Warning[2054] C:\Users\orpaz\Desktop\Space-invaders\Timer.c 62 : suspicious pointer conversion
+Warning[2066] C:\Users\orpaz\Desktop\Space-invaders\Timer.c 91 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\orpaz\Desktop\Space-invaders\Timer.c 92 : suspicious pointer conversion

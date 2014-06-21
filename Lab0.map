@@ -1,0 +1,1780 @@
+MPLINK 4.31, Linker
+Linker Map File - Created Sun Feb 23 19:24:30 2014
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+       .code__user_putc.o       code   0x000006    program   0x000002
+    HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
+           .code___init.o       code   0x00000e    program   0x000002
+          .idata_main.o_i    romdata   0x000010    program   0x000000
+           .idata_isr.o_i    romdata   0x000010    program   0x000002
+        .idata_mtouch.o_i    romdata   0x000010    program   0x000000
+         .idata_c018i.o_i    romdata   0x000012    program   0x000000
+    .idata__user_putc.o_i    romdata   0x000012    program   0x000000
+       .idata_fxm3232.o_i    romdata   0x000012    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x000012    program   0x000000
+        .idata___init.o_i    romdata   0x000012    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x000012    program   0x000000
+           .idata_WDT.o_i    romdata   0x000012    program   0x000002
+          .idata_Game.o_i    romdata   0x000014    program   0x000002
+    .idata_PushButton.o_i    romdata   0x000014    program   0x000000
+        .idata_EEPROM.o_i    romdata   0x000016    program   0x000000
+            .code_c018i.o       code   0x000016    program   0x000000
+        .idata_BMA150.o_i    romdata   0x000016    program   0x000000
+     LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
+                   .cinit    romdata   0x00001e    program   0x00004a
+             .code_Game.o       code   0x000068    program   0x001c5a
+         .code_vfprintf.o       code   0x001cc2    program   0x000c22
+             .code_oled.o       code   0x0028e4    program   0x0008a2
+             .code_menu.o       code   0x003186    program   0x000770
+           .code_EEPROM.o       code   0x0038f6    program   0x0003bc
+          .romdata_oled.o    romdata   0x003cb2    program   0x0003b6
+           .code_BMA150.o       code   0x004068    program   0x000398
+           .code_mtouch.o       code   0x004400    program   0x00032a
+              .code_isr.o       code   0x00472a    program   0x0000be
+              .code_WDT.o       code   0x0047e8    program   0x0000b4
+          .code_sprintf.o       code   0x00489c    program   0x0000ac
+                     PROG       code   0x004948    program   0x0000a6
+               _cinit_scn       code   0x0049ee    program   0x00009e
+            .code_Timer.o       code   0x004a8c    program   0x00009c
+             .code_putc.o       code   0x004b28    program   0x000084
+          .code_fxm3232.o       code   0x004bac    program   0x000070
+                   STRING       code   0x004c1c    program   0x000066
+         .code_fxd3232u.o       code   0x004c82    program   0x000048
+         .code_fxd1616u.o       code   0x004cca    program   0x00002c
+                    CTYPE       code   0x004cf6    program   0x000024
+             _startup_scn       code   0x004d1a    program   0x00001c
+                    STDIO       code   0x004d36    program   0x00001c
+             .stringtable    romdata   0x004d52    program   0x000014
+      .romdata_vfprintf.o    romdata   0x004d66    program   0x000011
+          .idata_putc.o_i    romdata   0x004d77    program   0x000000
+       .romdata_fxm3232.o    romdata   0x004d77    program   0x000000
+          .romdata_putc.o    romdata   0x004d77    program   0x000000
+         .romdata_Timer.o    romdata   0x004d77    program   0x000000
+    .romdata__user_putc.o    romdata   0x004d77    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x004d77    program   0x000000
+         .romdata_c018i.o    romdata   0x004d77    program   0x000000
+      .idata_vfprintf.o_i    romdata   0x004d77    program   0x000000
+        .romdata_EEPROM.o    romdata   0x004d77    program   0x000000
+          .romdata_menu.o    romdata   0x004d77    program   0x000000
+          .romdata_Game.o    romdata   0x004d77    program   0x000000
+           .romdata_isr.o    romdata   0x004d77    program   0x000000
+    .romdata_PushButton.o    romdata   0x004d77    program   0x000000
+           .romdata_WDT.o    romdata   0x004d77    program   0x000000
+        .romdata_mtouch.o    romdata   0x004d77    program   0x000000
+          .idata_oled.o_i    romdata   0x004d77    program   0x000001
+      .romdata_fxd1616u.o    romdata   0x004d77    program   0x000000
+        .romdata___init.o    romdata   0x004d77    program   0x000000
+          .romdata_main.o    romdata   0x004d77    program   0x000000
+       .idata_sprintf.o_i    romdata   0x004d77    program   0x000000
+       .romdata_sprintf.o    romdata   0x004d77    program   0x000000
+        .romdata_BMA150.o    romdata   0x004d77    program   0x000000
+       .code_PushButton.o       code   0x004d78    program   0x00000e
+                    .code       code   0x004d86    program   0x00000e
+             .code_main.o       code   0x004d94    program   0x00000c
+          .idata_menu.o_i    romdata   0x004da0    program   0x000073
+         .idata_Timer.o_i    romdata   0x004e13    program   0x00000c
+       .config_fffb_WDT.o    romdata   0x00fffb    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x000014
+                 .tmpdata      udata   0x000014       data   0x000010
+            .idata_menu.o      idata   0x000060       data   0x000073
+           .idata_Timer.o      idata   0x0000d3       data   0x00000c
+            .udata_oled.o      udata   0x0000df       data   0x00000b
+           .udata_c018i.o      udata   0x0000ea       data   0x00000a
+            .udata_Game.o      udata   0x0000f4       data   0x000006
+          .udata_mtouch.o      udata   0x0000fa       data   0x000004
+            .udata_menu.o      udata   0x0000fe       data   0x000002
+                   .stack      udata   0x000d00       data   0x000100
+             .idata_isr.o      idata   0x000e00       data   0x000002
+             .idata_WDT.o      idata   0x000e02       data   0x000002
+            .idata_Game.o      idata   0x000e04       data   0x000002
+            .idata_oled.o      idata   0x000e06       data   0x000001
+        .udata_fxd1616u.o      udata   0x000e07       data   0x000000
+        .idata_fxd1616u.o      idata   0x000e07       data   0x000000
+          .udata___init.o      udata   0x000e07       data   0x000000
+          .idata___init.o      idata   0x000e07       data   0x000000
+         .udata_sprintf.o      udata   0x000e07       data   0x000000
+         .idata_sprintf.o      idata   0x000e07       data   0x000000
+        .udata_vfprintf.o      udata   0x000e07       data   0x000000
+        .idata_vfprintf.o      idata   0x000e07       data   0x000000
+        .udata_fxd3232u.o      udata   0x000e07       data   0x000000
+        .idata_fxd3232u.o      idata   0x000e07       data   0x000000
+         .udata_fxm3232.o      udata   0x000e07       data   0x000000
+         .idata_fxm3232.o      idata   0x000e07       data   0x000000
+            .udata_putc.o      udata   0x000e07       data   0x000000
+            .idata_putc.o      idata   0x000e07       data   0x000000
+      .udata__user_putc.o      udata   0x000e07       data   0x000000
+      .idata__user_putc.o      idata   0x000e07       data   0x000000
+           .idata_c018i.o      idata   0x000e07       data   0x000000
+           .udata_Timer.o      udata   0x000e07       data   0x000000
+      .idata_PushButton.o      idata   0x000e07       data   0x000000
+          .udata_BMA150.o      udata   0x000e07       data   0x000000
+          .idata_BMA150.o      idata   0x000e07       data   0x000000
+      .udata_PushButton.o      udata   0x000e07       data   0x000000
+          .idata_mtouch.o      idata   0x000e07       data   0x000000
+             .udata_isr.o      udata   0x000e07       data   0x000000
+            .idata_main.o      idata   0x000e07       data   0x000000
+          .udata_EEPROM.o      udata   0x000e07       data   0x000000
+          .idata_EEPROM.o      idata   0x000e07       data   0x000000
+            .udata_main.o      udata   0x000e07       data   0x000000
+             .udata_WDT.o      udata   0x000e07       data   0x000000
+              SFR_BANKED0      udata   0x000ec6       data   0x00000e
+              SFR_BANKED1      udata   0x000ed7       data   0x000008
+              SFR_BANKED2      udata   0x000ee7       data   0x000004
+              SFR_BANKED3      udata   0x000eec       data   0x000003
+              SFR_BANKED4      udata   0x000ef2       data   0x000002
+              SFR_BANKED5      udata   0x000ef6       data   0x000002
+              SFR_BANKED6      udata   0x000efb       data   0x000005
+              SFR_BANKED7      udata   0x000f26       data   0x000014
+              SFR_BANKED8      udata   0x000f3c       data   0x000007
+              SFR_BANKED9      udata   0x000f48       data   0x000008
+             SFR_BANKED10      udata   0x000f52       data   0x00000e
+            SFR_UNBANKED0      udata   0x000f60       data   0x0000a0
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000015      
+                            0x000018    0x004e1e      
+                            0x00fffb    0x00fffb      
+            19998 out of 65538 program addresses used, program memory utilization is 30%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+             BMA150_Delay   0x0041fe    program     static C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+            BMA150_GetXYZ   0x004244    program     extern C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+              BMA150_Init   0x004068    program     extern C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+          BMA150_ReadByte   0x0041ce    program     extern C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+         BMA150_WriteByte   0x00416a    program     extern C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+                   D1616S   0x00496a    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x004978    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x004974    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x00498a    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x00495a    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                 FXD1616S   0x004948    program     extern C:\MCC18\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x004cca    program     extern C:\MCC18\src\traditional\math\fxd1616u.c
+                 FXD3232U   0x004c82    program     extern C:\MCC18\src\traditional\math\fxd3232u.c
+                 FXM1616S   0x004994    program     extern C:\MCC18\src\traditional\math\fxm1616s.asm
+                  FXM3232   0x004bac    program     extern C:\MCC18\src\traditional\math\fxm3232.c
+          HighPriorityIsr   0x00472a    program     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+                 High_ISR   0x000008    program     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+                  InitADC   0x004400    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+                 InitCTMU   0x004428    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+           LowPriorityIsr   0x0047e6    program     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+                  Low_ISR   0x000018    program     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+              Main_RunWDT   0x0047ec    program     extern C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+               Main_Timer   0x000068    program     extern C:\Users\orpaz\Desktop\Space-invaders\Game.c
+                 Menu_Run   0x003186    program     extern C:\Users\orpaz\Desktop\Space-invaders\menu.c
+                Menu_Show   0x003518    program     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+             Oled_DelayMs   0x0028e4    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+         Oled_FillDisplay   0x002b0c    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                Oled_Init   0x002954    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+            Oled_PutImage   0x002c7a    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+        Oled_PutROMString   0x002b7e    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+           Oled_PutString   0x002bfc    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+         Oled_WriteChar1x   0x002dce    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+          PushButton_Init   0x004d78    program     extern C:\Users\orpaz\Desktop\Space-invaders\PushButton.c
+                RomDelete   0x003c46    program     extern C:\Users\orpaz\Desktop\Space-invaders\EEPROM.c
+                  RomRead   0x0038f6    program     extern C:\Users\orpaz\Desktop\Space-invaders\EEPROM.c
+                 RomWrite   0x0039b6    program     extern C:\Users\orpaz\Desktop\Space-invaders\EEPROM.c
+                  SetMode   0x00293e    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+              SpiPinRemap   0x004146    program     static C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+              Static_menu   0x003602    program     extern C:\Users\orpaz\Desktop\Space-invaders\menu.c
+               TSIGN1616A   0x0049e0    program     static C:\MCC18\src\traditional\math\fxm1616s.asm
+              Timer_delay   0x004aa2    program     extern C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+               Timer_init   0x004a8c    program     extern C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+               Timer_stop   0x004b24    program     extern C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                 WDT_init   0x0047e8    program     extern C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+             WriteCommand   0x002d34    program     static C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                WriteData   0x002da6    program     static C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                   _2jEnd   0x004c6c    program     static C:\MCC18\src\traditional\stdclib\slenpgm.asm
+       ___case_0_lbl00010   0x00321c    program     static                          
+       ___case_1_lbl00012   0x0033e2    program     static                          
+       ___case_2_lbl00014   0x003412    program     static                          
+       ___case_3_lbl00016   0x003486    program     static                          
+         ___else_lbl00009   0x0032fa    program     static                          
+         ___else_lbl00032   0x000926    program     static                          
+         ___else_lbl00058   0x001048    program     static                          
+         ___else_lbl00060   0x000fe6    program     static                          
+         ___else_lbl00062   0x000f3a    program     static                          
+         ___else_lbl00064   0x000e8e    program     static                          
+         ___else_lbl00066   0x000df2    program     static                          
+         ___else_lbl00071   0x00112a    program     static                          
+         ___else_lbl00077   0x00123e    program     static                          
+          ___for_lbl00001   0x003998    program     static                          
+          ___for_lbl00002   0x0039a2    program     static                          
+          ___for_lbl00003   0x003950    program     static                          
+          ___for_lbl00004   0x000292    program     static                          
+          ___for_lbl00005   0x00029e    program     static                          
+          ___for_lbl00006   0x000214    program     static                          
+          ___for_lbl00007   0x003ad4    program     static                          
+          ___for_lbl00007   0x000326    program     static                          
+          ___for_lbl00008   0x003ae8    program     static                          
+          ___for_lbl00008   0x000332    program     static                          
+          ___for_lbl00009   0x003a0e    program     static                          
+          ___for_lbl00009   0x0002a6    program     static                          
+          ___for_lbl00011   0x003bf6    program     static                          
+          ___for_lbl00012   0x003c0a    program     static                          
+          ___for_lbl00013   0x003b30    program     static                          
+          ___for_lbl00024   0x000ba6    program     static                          
+          ___for_lbl00025   0x000bb2    program     static                          
+          ___for_lbl00033   0x000662    program     static                          
+          ___for_lbl00035   0x000c72    program     static                          
+          ___for_lbl00036   0x000c7e    program     static                          
+          ___for_lbl00038   0x000be0    program     static                          
+          ___for_lbl00039   0x000d24    program     static                          
+          ___for_lbl00040   0x000d30    program     static                          
+          ___for_lbl00042   0x000c86    program     static                          
+          ___for_lbl00043   0x00107c    program     static                          
+          ___for_lbl00044   0x001088    program     static                          
+          ___for_lbl00067   0x000d38    program     static                          
+          ___for_lbl00068   0x001182    program     static                          
+          ___for_lbl00069   0x00118e    program     static                          
+          ___for_lbl00073   0x001090    program     static                          
+          ___for_lbl00074   0x0012a2    program     static                          
+          ___for_lbl00075   0x0012ae    program     static                          
+          ___for_lbl00079   0x001196    program     static                          
+          ___for_lbl00087   0x0014ae    program     static                          
+          ___for_lbl00088   0x0014ba    program     static                          
+          ___for_lbl00090   0x001452    program     static                          
+          ___for_lbl00094   0x0017a2    program     static                          
+          ___for_lbl00095   0x0017b6    program     static                          
+          ___for_lbl00097   0x001624    program     static                          
+          ___for_lbl00098   0x0018b8    program     static                          
+          ___for_lbl00099   0x0018cc    program     static                          
+          ___for_lbl00100   0x0017be    program     static                          
+           ___if_lbl00001   0x0040ae    program     static                          
+           ___if_lbl00005   0x003200    program     static                          
+           ___if_lbl00007   0x0033e0    program     static                          
+           ___if_lbl00008   0x0033e0    program     static                          
+           ___if_lbl00010   0x003b0e    program     static                          
+           ___if_lbl00010   0x00037e    program     static                          
+           ___if_lbl00011   0x00039e    program     static                          
+           ___if_lbl00011   0x003406    program     static                          
+           ___if_lbl00012   0x0003be    program     static                          
+           ___if_lbl00013   0x00347a    program     static                          
+           ___if_lbl00014   0x003c30    program     static                          
+           ___if_lbl00015   0x0034fe    program     static                          
+           ___if_lbl00015   0x000464    program     static                          
+           ___if_lbl00016   0x000464    program     static                          
+           ___if_lbl00017   0x0004e8    program     static                          
+           ___if_lbl00018   0x0004e8    program     static                          
+           ___if_lbl00019   0x000558    program     static                          
+           ___if_lbl00020   0x000594    program     static                          
+           ___if_lbl00022   0x00060c    program     static                          
+           ___if_lbl00030   0x000ba6    program     static                          
+           ___if_lbl00031   0x000ba6    program     static                          
+           ___if_lbl00034   0x000bb2    program     static                          
+           ___if_lbl00037   0x000c72    program     static                          
+           ___if_lbl00041   0x000d24    program     static                          
+           ___if_lbl00056   0x00107c    program     static                          
+           ___if_lbl00057   0x00107c    program     static                          
+           ___if_lbl00059   0x00107c    program     static                          
+           ___if_lbl00061   0x00107c    program     static                          
+           ___if_lbl00063   0x00107c    program     static                          
+           ___if_lbl00065   0x00107c    program     static                          
+           ___if_lbl00070   0x001182    program     static                          
+           ___if_lbl00072   0x001182    program     static                          
+           ___if_lbl00076   0x0012a2    program     static                          
+           ___if_lbl00078   0x0012a2    program     static                          
+           ___if_lbl00080   0x0012c8    program     static                          
+           ___if_lbl00081   0x001306    program     static                          
+           ___if_lbl00082   0x001344    program     static                          
+           ___if_lbl00083   0x001382    program     static                          
+           ___if_lbl00084   0x0013c0    program     static                          
+           ___if_lbl00085   0x0013f8    program     static                          
+           ___if_lbl00086   0x00144a    program     static                          
+           ___if_lbl00089   0x0014ae    program     static                          
+           ___if_lbl00091   0x0014ba    program     static                          
+           ___if_lbl00092   0x0014cc    program     static                          
+           ___if_lbl00096   0x0017a2    program     static                          
+       ___return_lbl00000   0x0039a2    program     static                          
+       ___return_lbl00000   0x004cc8    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x003504    program     static                          
+       ___return_lbl00000   0x004cf4    program     static                          
+       ___return_lbl00000   0x004c1a    program     static                          
+       ___return_lbl00000   0x004132    program     static                          
+       ___return_lbl00001   0x004d34    program     static                          
+       ___return_lbl00001   0x004888    program     static                          
+       ___return_lbl00001   0x0014d6    program     static                          
+       ___return_lbl00002   0x004a8a    program     static                          
+       ___return_lbl00004   0x003c32    program     static                          
+       ___return_lbl00005   0x00000c    program     static                          
+       ___return_lbl00006   0x00001c    program     static                          
+       ___return_lbl00093   0x00191e    program     static                          
+       ___return_lbl00103   0x001cae    program     static                          
+   ___switchexit_lbl00006   0x003500    program     static                          
+        ___while_lbl00001   0x0031a8    program     static                          
+        ___while_lbl00002   0x004812    program     static                          
+        ___while_lbl00002   0x003504    program     static                          
+        ___while_lbl00002   0x0001cc    program     static                          
+        ___while_lbl00003   0x004888    program     static                          
+        ___while_lbl00003   0x0031f6    program     static                          
+        ___while_lbl00003   0x0014d6    program     static                          
+        ___while_lbl00004   0x003200    program     static                          
+        ___while_lbl00004   0x004812    program     static                          
+        ___while_lbl00005   0x00487c    program     static                          
+        ___while_lbl00005   0x0039ce    program     static                          
+        ___while_lbl00006   0x00487c    program     static                          
+        ___while_lbl00006   0x003c32    program     static                          
+        ___while_lbl00007   0x004886    program     static                          
+        ___while_lbl00013   0x0003be    program     static                          
+        ___while_lbl00014   0x0014d2    program     static                          
+        ___while_lbl00101   0x001912    program     static                          
+        ___while_lbl00102   0x00191e    program     static                          
+        ___while_lbl00104   0x001ca2    program     static                          
+        ___while_lbl00105   0x001cae    program     static                          
+               __config_0   0x00fffb    program     static C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+                   __init   0x00000e    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+                   __pa_0   0x002602    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_1   0x00260a    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_10   0x0026be    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_11   0x0026cc    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_12   0x0026e2    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_13   0x0026fc    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_14   0x002714    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_15   0x002724    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_16   0x00273a    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_17   0x00274c    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_18   0x00275e    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_19   0x002768    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_2   0x002614    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_20   0x002778    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_21   0x002788    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_22   0x002798    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_23   0x0027a4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_24   0x0027b2    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_25   0x0027ba    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_26   0x0027c4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_27   0x0027ce    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_28   0x0027d6    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_29   0x0027e4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_3   0x00261e    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_30   0x002800    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_31   0x00281a    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_32   0x002834    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_33   0x00284c    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_34   0x002856    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_35   0x002864    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_36   0x00286c    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_37   0x002876    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_38   0x002886    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_39   0x002894    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_4   0x002636    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_40   0x0028a0    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_41   0x0028ac    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_42   0x0028b4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_43   0x0028be    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_44   0x0028c4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_45   0x0028ce    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_46   0x0028da    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_5   0x00264a    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_6   0x002666    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_7   0x002670    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_8   0x00267c    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_9   0x00269e    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+               __string_0   0x004d63    program     static C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+               __string_9   0x004d55    program     static C:\Users\orpaz\Desktop\Space-invaders\Game.c
+               __string_9   0x004d52    program     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+               __tmplbl_0   0x003970    program     static                          
+               __tmplbl_0   0x0005b0    program     static                          
+               __tmplbl_1   0x00059c    program     static                          
+              __tmplbl_10   0x000dde    program     static                          
+              __tmplbl_11   0x000db2    program     static                          
+              __tmplbl_12   0x000d74    program     static                          
+              __tmplbl_13   0x000e7a    program     static                          
+              __tmplbl_14   0x000e4e    program     static                          
+              __tmplbl_15   0x000e10    program     static                          
+              __tmplbl_16   0x000f26    program     static                          
+              __tmplbl_17   0x000ef6    program     static                          
+              __tmplbl_18   0x000ee6    program     static                          
+              __tmplbl_19   0x000eac    program     static                          
+               __tmplbl_2   0x003466    program     static                          
+               __tmplbl_2   0x00065a    program     static                          
+              __tmplbl_20   0x000fd2    program     static                          
+              __tmplbl_21   0x000fa2    program     static                          
+              __tmplbl_22   0x000f92    program     static                          
+              __tmplbl_23   0x000f58    program     static                          
+              __tmplbl_24   0x001026    program     static                          
+              __tmplbl_25   0x000ffa    program     static                          
+              __tmplbl_26   0x0012be    program     static                          
+              __tmplbl_27   0x0012ba    program     static                          
+              __tmplbl_28   0x0006d8    program     static                          
+              __tmplbl_29   0x000750    program     static                          
+               __tmplbl_3   0x000628    program     static                          
+              __tmplbl_30   0x00097e    program     static                          
+              __tmplbl_31   0x0009f6    program     static                          
+              __tmplbl_32   0x000bcc    program     static                          
+              __tmplbl_33   0x0012ee    program     static                          
+              __tmplbl_34   0x00132c    program     static                          
+              __tmplbl_35   0x00136a    program     static                          
+              __tmplbl_36   0x0013a8    program     static                          
+              __tmplbl_37   0x0013e6    program     static                          
+              __tmplbl_38   0x001648    program     static                          
+              __tmplbl_39   0x0016ba    program     static                          
+               __tmplbl_4   0x00077c    program     static                          
+              __tmplbl_40   0x0017e2    program     static                          
+              __tmplbl_42   0x002798    program     static                          
+              __tmplbl_43   0x0025e0    program     static                          
+              __tmplbl_44   0x0025c6    program     static                          
+               __tmplbl_5   0x00075c    program     static                          
+               __tmplbl_6   0x0006e4    program     static                          
+               __tmplbl_7   0x000a22    program     static                          
+               __tmplbl_8   0x000a02    program     static                          
+              __tmplbl_85   0x001d18    program     static                          
+               __tmplbl_9   0x00098a    program     static                          
+            __zero_memory   0x004d86    program     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                _do_cinit   0x0049ee    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                   _false   0x004cc4    program     static                          
+                 _startup   0x004d1a    program     extern C:\MCC18\src\traditional\startup\c018i.c
+              _usart_putc   0x004d36    program     extern C:\MCC18\src\pmc_common\USART\_usartpc.asm
+               _user_putc   0x000006    program     extern C:\MCC18\src\traditional\stdclib\_user_putc.c
+                    about   0x001932    program     extern C:\Users\orpaz\Desktop\Space-invaders\Game.c
+               clear_loop   0x004d8c    program     static C:\MCC18\src\traditional\proc\p18F46J50.asm
+                copy_loop   0x004a60    program     static                          
+            copy_one_byte   0x004a66    program     static                          
+                     done   0x004a8a    program     static                          
+             done_copying   0x004a74    program     static                          
+                  endloop   0x004cf0    program     static                          
+              g_AlienFont   0x003cb2    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                g_pucFont   0x003e8d    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                     game   0x000080    program     extern C:\Users\orpaz\Desktop\Space-invaders\Game.c
+                game_over   0x0014ea    program     extern C:\Users\orpaz\Desktop\Space-invaders\Game.c
+                  isdigit   0x004cf6    program     extern C:\MCC18\src\traditional\stdclib\isdigit.asm
+                     jEnd   0x004c36    program     static C:\MCC18\src\traditional\stdclib\strlen.asm
+                     jEnd   0x004c6e    program     static C:\MCC18\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x004c56    program     static C:\MCC18\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x004c2c    program     static C:\MCC18\src\traditional\stdclib\strlen.asm
+                   jMatch   0x004d16    program     static C:\MCC18\src\traditional\stdclib\isdigit.asm
+                 jNoMatch   0x004d18    program     static C:\MCC18\src\traditional\stdclib\isdigit.asm
+                     loop   0x004c90    program     static                          
+                     loop   0x004d2a    program     static                          
+                     loop   0x004d46    program     static C:\MCC18\src\pmc_common\USART\_usartpc.asm
+                     loop   0x004cd4    program     static                          
+         mTouch_Calibrate   0x00455e    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+             mTouch_Delay   0x00469a    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+   mTouch_GetPushedButton   0x00469c    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+              mTouch_Init   0x00443e    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+        mTouch_ReadButton   0x0044d0    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+    mTouch_ReadButtonOnce   0x004446    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+                     main   0x004d94    program     extern C:\Users\orpaz\Desktop\Space-invaders\main.c
+                     putc   0x004b28    program     extern C:\MCC18\src\traditional\stdclib\putc.c
+                 s_digits   0x004d66    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+            s_put_n_chars   0x001cc2    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  sprintf   0x00489c    program     extern C:\MCC18\src\traditional\stdclib\sprintf.c
+                   strlen   0x004c1c    program     extern C:\MCC18\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x004c38    program     extern C:\MCC18\src\traditional\stdclib\slenpgm.asm
+                     test   0x004a08    program     static                          
+                 vfprintf   0x001cee    program     extern C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  ALRMCFG   0x000f91       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              ALRMCFGbits   0x000f91       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  ALRMRPT   0x000f90       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              ALRMRPTbits   0x000f90       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ALRMVALH   0x000f8f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ALRMVALL   0x000f8e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ANCON0   0x000f48       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ANCON0bits   0x000f48       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ANCON1   0x000f49       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ANCON1bits   0x000f49       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  BAUDCTL   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              BAUDCTLbits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  CCP1CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              CCP1CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  CCP2CON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              CCP2CONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    CCPR1   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CCPR1H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CCPR1L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    CCPR2   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CCPR2H   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CCPR2L   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CMSTAT   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 CMSTATUS   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             CMSTATUSbits   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               CMSTATbits   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 CTMUCONH   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             CTMUCONHbits   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 CTMUCONL   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             CTMUCONLbits   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 CTMUICON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             CTMUICONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CVRCON   0x000f53       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               CVRCONbits   0x000f53       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DMABCH   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               DMABCHbits   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DMABCL   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  DMACON1   0x000f88       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              DMACON1bits   0x000f88       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  DMACON2   0x000f86       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              DMACON2bits   0x000f86       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DSCONH   0x000f4d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               DSCONHbits   0x000f4d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DSCONL   0x000f4c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               DSCONLbits   0x000f4c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DSGPR0   0x000f4e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DSGPR1   0x000f4f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  DSWAKEH   0x000f4b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              DSWAKEHbits   0x000f4b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  DSWAKEL   0x000f4a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              DSWAKELbits   0x000f4a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  ECCP1AS   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              ECCP1ASbits   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ECCP1CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             ECCP1CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ECCP1DEL   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             ECCP1DELbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  ECCP2AS   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              ECCP2ASbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ECCP2CON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             ECCP2CONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ECCP2DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             ECCP2DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                        H   0x0000dd       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                  HLVDCON   0x000f85       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              HLVDCONbits   0x000f85       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                        M   0x0000db       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                       Ms   0x000e04       data     static C:\Users\orpaz\Desktop\Space-invaders\Game.c
+                       Ms   0x0000d7       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                   ODCON1   0x000f42       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ODCON1bits   0x000f42       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ODCON2   0x000f41       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ODCON2bits   0x000f41       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ODCON3   0x000f40       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ODCON3bits   0x000f40       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PADCFG1   0x000f3c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PADCFG1bits   0x000f3c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMADDRH   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMADDRHbits   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMADDRL   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PMCONH   0x000f5f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               PMCONHbits   0x000f5f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PMCONL   0x000f5e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               PMCONLbits   0x000f5e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMDIN1H   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMDIN1L   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMDIN2H   0x000f59       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMDIN2L   0x000f58       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMDOUT1H   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMDOUT1L   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMDOUT2H   0x000f5b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMDOUT2L   0x000f5a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PMEH   0x000f57       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMEHbits   0x000f57       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PMEL   0x000f56       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMELbits   0x000f56       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMMODEH   0x000f5d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMMODEHbits   0x000f5d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMMODEL   0x000f5c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMMODELbits   0x000f5c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMSTATH   0x000f55       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMSTATHbits   0x000f55       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMSTATL   0x000f54       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMSTATLbits   0x000f54       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PPSCON   0x000eff       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               PPSCONbits   0x000eff       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      PR4   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PSTR1CON   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             PSTR1CONbits   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PSTR2CON   0x000fb9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             PSTR2CONbits   0x000fb9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PWM1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PWM1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PWM2CON   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PWM2CONbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  REFOCON   0x000f3d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              REFOCONbits   0x000f3d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR1   0x000ee7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR12   0x000ef2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR13   0x000ef3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR16   0x000ef6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR17   0x000ef7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR2   0x000ee8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR21   0x000efb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR22   0x000efc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR23   0x000efd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR24   0x000efe       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR3   0x000ee9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR4   0x000eea       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR6   0x000eec       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR7   0x000eed       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR8   0x000eee       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR0   0x000ec6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR1   0x000ec7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR10   0x000ed0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR11   0x000ed1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR12   0x000ed2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR13   0x000ed3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR17   0x000ed7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR18   0x000ed8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR19   0x000ed9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR2   0x000ec8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR20   0x000eda       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR21   0x000edb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR22   0x000edc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR23   0x000edd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR24   0x000ede       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR3   0x000ec9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR4   0x000eca       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR5   0x000ecb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR6   0x000ecc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR7   0x000ecd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR8   0x000ece       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR9   0x000ecf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RTCCAL   0x000f3e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               RTCCALbits   0x000f3e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RTCCFG   0x000f3f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               RTCCFGbits   0x000f3f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RTCVALH   0x000f99       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RTCVALL   0x000f98       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RXADDRH   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              RXADDRHbits   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RXADDRL   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                        S   0x0000d9       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                     SIGN   0x000000       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                    SPBRG   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SPBRGH   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSP1ADDbits   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSP2ADD   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSP2ADDbits   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSP2BUF   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP2CON1   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP2CON1bits   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP2CON2   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP2CON2bits   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP2STAT   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP2STATbits   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               SSPADDbits   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   T1GCON   0x000f9a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               T1GCONbits   0x000f9a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   T3GCON   0x000f97       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               T3GCONbits   0x000f97       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TCLKCON   0x000f52       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              TCLKCONbits   0x000f52       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TXADDRH   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              TXADDRHbits   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TXADDRL   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UADDR   0x000f38       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UADDRbits   0x000f38       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UCFG   0x000f39       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UCFGbits   0x000f39       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UCON   0x000f65       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UCONbits   0x000f65       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEIE   0x000f37       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEIEbits   0x000f37       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEIR   0x000f63       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEIRbits   0x000f63       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP0   0x000f26       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP0bits   0x000f26       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP1   0x000f27       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP10   0x000f30       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP10bits   0x000f30       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP11   0x000f31       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP11bits   0x000f31       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP12   0x000f32       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP12bits   0x000f32       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP13   0x000f33       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP13bits   0x000f33       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP14   0x000f34       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP14bits   0x000f34       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP15   0x000f35       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP15bits   0x000f35       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP1bits   0x000f27       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP2   0x000f28       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP2bits   0x000f28       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP3   0x000f29       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP3bits   0x000f29       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP4   0x000f2a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP4bits   0x000f2a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP5   0x000f2b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP5bits   0x000f2b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP6   0x000f2c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP6bits   0x000f2c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP7   0x000f2d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP7bits   0x000f2d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP8   0x000f2e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP8bits   0x000f2e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP9   0x000f2f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP9bits   0x000f2f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UFRM   0x000f60       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UFRMH   0x000f61       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UFRMHbits   0x000f61       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UFRML   0x000f60       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UFRMLbits   0x000f60       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      UIE   0x000f36       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  UIEbits   0x000f36       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      UIR   0x000f62       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  UIRbits   0x000f62       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    USTAT   0x000f64       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                USTATbits   0x000f64       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   WDTCON   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 __AARGB0   0x000009       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __BARGB0   0x00000e       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB3   0x00000b       data     extern C:\MCC18\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern C:\MCC18\src\traditional\math\barg.asm
+                __FPFLAGS   0x000001       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                  __REMB0   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                   __TEMP   0x000013       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                 __TEMPB0   0x000013       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000012       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000011       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                 __TEMPB3   0x000010       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                  __tmp_0   0x000014       data     static C:\MCC18\src\traditional\stdclib\sprintf.c
+                  __tmp_0   0x000014       data     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __tmp_0   0x000014       data     static C:\MCC18\src\traditional\stdclib\putc.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\EEPROM.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\Game.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+              _clipBottom   0x0000e8       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                _clipLeft   0x0000e2       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                 _clipRgn   0x0000e0       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+               _clipRight   0x0000e6       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                 _clipTop   0x0000e4       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                   _color   0x0000df       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                curr_byte   0x0000ed       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x0000ef       data     static C:\MCC18\src\traditional\startup\c018i.c
+                     data   0x0000f4       data     static C:\Users\orpaz\Desktop\Space-invaders\Game.c
+                     data   0x0000fe       data     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+                 data_ptr   0x0000f1       data     static C:\MCC18\src\traditional\startup\c018i.c
+ g_mTouchCalibrationITRIM   0x0000fa       data     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+                     mode   0x000e06       data     static C:\Users\orpaz\Desktop\Space-invaders\oled.c
+            pbPressedFlag   0x000e00       data     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+                     prom   0x0000ea       data     static C:\MCC18\src\traditional\startup\c018i.c
+                    sMenu   0x000060       data     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+                        t   0x0000d5       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                        x   0x0000d3       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                        x   0x000e02       data     static C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+               _user_putc   0x000006    program     extern C:\MCC18\src\traditional\stdclib\_user_putc.c
+                 High_ISR   0x000008    program     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+       ___return_lbl00005   0x00000c    program     static                          
+                   __init   0x00000e    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+                  Low_ISR   0x000018    program     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+       ___return_lbl00006   0x00001c    program     static                          
+               Main_Timer   0x000068    program     extern C:\Users\orpaz\Desktop\Space-invaders\Game.c
+                     game   0x000080    program     extern C:\Users\orpaz\Desktop\Space-invaders\Game.c
+        ___while_lbl00002   0x0001cc    program     static                          
+          ___for_lbl00006   0x000214    program     static                          
+          ___for_lbl00004   0x000292    program     static                          
+          ___for_lbl00005   0x00029e    program     static                          
+          ___for_lbl00009   0x0002a6    program     static                          
+          ___for_lbl00007   0x000326    program     static                          
+          ___for_lbl00008   0x000332    program     static                          
+           ___if_lbl00010   0x00037e    program     static                          
+           ___if_lbl00011   0x00039e    program     static                          
+           ___if_lbl00012   0x0003be    program     static                          
+        ___while_lbl00013   0x0003be    program     static                          
+           ___if_lbl00015   0x000464    program     static                          
+           ___if_lbl00016   0x000464    program     static                          
+           ___if_lbl00018   0x0004e8    program     static                          
+           ___if_lbl00017   0x0004e8    program     static                          
+           ___if_lbl00019   0x000558    program     static                          
+           ___if_lbl00020   0x000594    program     static                          
+               __tmplbl_1   0x00059c    program     static                          
+               __tmplbl_0   0x0005b0    program     static                          
+           ___if_lbl00022   0x00060c    program     static                          
+               __tmplbl_3   0x000628    program     static                          
+               __tmplbl_2   0x00065a    program     static                          
+          ___for_lbl00033   0x000662    program     static                          
+              __tmplbl_28   0x0006d8    program     static                          
+               __tmplbl_6   0x0006e4    program     static                          
+              __tmplbl_29   0x000750    program     static                          
+               __tmplbl_5   0x00075c    program     static                          
+               __tmplbl_4   0x00077c    program     static                          
+         ___else_lbl00032   0x000926    program     static                          
+              __tmplbl_30   0x00097e    program     static                          
+               __tmplbl_9   0x00098a    program     static                          
+              __tmplbl_31   0x0009f6    program     static                          
+               __tmplbl_8   0x000a02    program     static                          
+               __tmplbl_7   0x000a22    program     static                          
+           ___if_lbl00031   0x000ba6    program     static                          
+           ___if_lbl00030   0x000ba6    program     static                          
+          ___for_lbl00024   0x000ba6    program     static                          
+           ___if_lbl00034   0x000bb2    program     static                          
+          ___for_lbl00025   0x000bb2    program     static                          
+              __tmplbl_32   0x000bcc    program     static                          
+          ___for_lbl00038   0x000be0    program     static                          
+           ___if_lbl00037   0x000c72    program     static                          
+          ___for_lbl00035   0x000c72    program     static                          
+          ___for_lbl00036   0x000c7e    program     static                          
+          ___for_lbl00042   0x000c86    program     static                          
+           ___if_lbl00041   0x000d24    program     static                          
+          ___for_lbl00039   0x000d24    program     static                          
+          ___for_lbl00040   0x000d30    program     static                          
+          ___for_lbl00067   0x000d38    program     static                          
+              __tmplbl_12   0x000d74    program     static                          
+              __tmplbl_11   0x000db2    program     static                          
+              __tmplbl_10   0x000dde    program     static                          
+         ___else_lbl00066   0x000df2    program     static                          
+              __tmplbl_15   0x000e10    program     static                          
+              __tmplbl_14   0x000e4e    program     static                          
+              __tmplbl_13   0x000e7a    program     static                          
+         ___else_lbl00064   0x000e8e    program     static                          
+              __tmplbl_19   0x000eac    program     static                          
+              __tmplbl_18   0x000ee6    program     static                          
+              __tmplbl_17   0x000ef6    program     static                          
+              __tmplbl_16   0x000f26    program     static                          
+         ___else_lbl00062   0x000f3a    program     static                          
+              __tmplbl_23   0x000f58    program     static                          
+              __tmplbl_22   0x000f92    program     static                          
+              __tmplbl_21   0x000fa2    program     static                          
+              __tmplbl_20   0x000fd2    program     static                          
+         ___else_lbl00060   0x000fe6    program     static                          
+              __tmplbl_25   0x000ffa    program     static                          
+              __tmplbl_24   0x001026    program     static                          
+         ___else_lbl00058   0x001048    program     static                          
+          ___for_lbl00043   0x00107c    program     static                          
+           ___if_lbl00056   0x00107c    program     static                          
+           ___if_lbl00065   0x00107c    program     static                          
+           ___if_lbl00063   0x00107c    program     static                          
+           ___if_lbl00061   0x00107c    program     static                          
+           ___if_lbl00057   0x00107c    program     static                          
+           ___if_lbl00059   0x00107c    program     static                          
+          ___for_lbl00044   0x001088    program     static                          
+          ___for_lbl00073   0x001090    program     static                          
+         ___else_lbl00071   0x00112a    program     static                          
+          ___for_lbl00068   0x001182    program     static                          
+           ___if_lbl00072   0x001182    program     static                          
+           ___if_lbl00070   0x001182    program     static                          
+          ___for_lbl00069   0x00118e    program     static                          
+          ___for_lbl00079   0x001196    program     static                          
+         ___else_lbl00077   0x00123e    program     static                          
+          ___for_lbl00074   0x0012a2    program     static                          
+           ___if_lbl00078   0x0012a2    program     static                          
+           ___if_lbl00076   0x0012a2    program     static                          
+          ___for_lbl00075   0x0012ae    program     static                          
+              __tmplbl_27   0x0012ba    program     static                          
+              __tmplbl_26   0x0012be    program     static                          
+           ___if_lbl00080   0x0012c8    program     static                          
+              __tmplbl_33   0x0012ee    program     static                          
+           ___if_lbl00081   0x001306    program     static                          
+              __tmplbl_34   0x00132c    program     static                          
+           ___if_lbl00082   0x001344    program     static                          
+              __tmplbl_35   0x00136a    program     static                          
+           ___if_lbl00083   0x001382    program     static                          
+              __tmplbl_36   0x0013a8    program     static                          
+           ___if_lbl00084   0x0013c0    program     static                          
+              __tmplbl_37   0x0013e6    program     static                          
+           ___if_lbl00085   0x0013f8    program     static                          
+           ___if_lbl00086   0x00144a    program     static                          
+          ___for_lbl00090   0x001452    program     static                          
+          ___for_lbl00087   0x0014ae    program     static                          
+           ___if_lbl00089   0x0014ae    program     static                          
+          ___for_lbl00088   0x0014ba    program     static                          
+           ___if_lbl00091   0x0014ba    program     static                          
+           ___if_lbl00092   0x0014cc    program     static                          
+        ___while_lbl00014   0x0014d2    program     static                          
+        ___while_lbl00003   0x0014d6    program     static                          
+       ___return_lbl00001   0x0014d6    program     static                          
+                game_over   0x0014ea    program     extern C:\Users\orpaz\Desktop\Space-invaders\Game.c
+          ___for_lbl00097   0x001624    program     static                          
+              __tmplbl_38   0x001648    program     static                          
+              __tmplbl_39   0x0016ba    program     static                          
+          ___for_lbl00094   0x0017a2    program     static                          
+           ___if_lbl00096   0x0017a2    program     static                          
+          ___for_lbl00095   0x0017b6    program     static                          
+          ___for_lbl00100   0x0017be    program     static                          
+              __tmplbl_40   0x0017e2    program     static                          
+          ___for_lbl00098   0x0018b8    program     static                          
+          ___for_lbl00099   0x0018cc    program     static                          
+        ___while_lbl00101   0x001912    program     static                          
+       ___return_lbl00093   0x00191e    program     static                          
+        ___while_lbl00102   0x00191e    program     static                          
+                    about   0x001932    program     extern C:\Users\orpaz\Desktop\Space-invaders\Game.c
+        ___while_lbl00104   0x001ca2    program     static                          
+       ___return_lbl00103   0x001cae    program     static                          
+        ___while_lbl00105   0x001cae    program     static                          
+            s_put_n_chars   0x001cc2    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                 vfprintf   0x001cee    program     extern C:\MCC18\src\traditional\stdclib\vfprintf.c
+              __tmplbl_85   0x001d18    program     static                          
+              __tmplbl_44   0x0025c6    program     static                          
+              __tmplbl_43   0x0025e0    program     static                          
+                   __pa_0   0x002602    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_1   0x00260a    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_2   0x002614    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_3   0x00261e    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_4   0x002636    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_5   0x00264a    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_6   0x002666    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_7   0x002670    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_8   0x00267c    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                   __pa_9   0x00269e    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_10   0x0026be    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_11   0x0026cc    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_12   0x0026e2    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_13   0x0026fc    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_14   0x002714    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_15   0x002724    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_16   0x00273a    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_17   0x00274c    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_18   0x00275e    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_19   0x002768    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_20   0x002778    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_21   0x002788    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_22   0x002798    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+              __tmplbl_42   0x002798    program     static                          
+                  __pa_23   0x0027a4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_24   0x0027b2    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_25   0x0027ba    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_26   0x0027c4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_27   0x0027ce    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_28   0x0027d6    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_29   0x0027e4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_30   0x002800    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_31   0x00281a    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_32   0x002834    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_33   0x00284c    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_34   0x002856    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_35   0x002864    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_36   0x00286c    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_37   0x002876    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_38   0x002886    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_39   0x002894    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_40   0x0028a0    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_41   0x0028ac    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_42   0x0028b4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_43   0x0028be    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_44   0x0028c4    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_45   0x0028ce    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __pa_46   0x0028da    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+             Oled_DelayMs   0x0028e4    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                  SetMode   0x00293e    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                Oled_Init   0x002954    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+         Oled_FillDisplay   0x002b0c    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+        Oled_PutROMString   0x002b7e    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+           Oled_PutString   0x002bfc    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+            Oled_PutImage   0x002c7a    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+             WriteCommand   0x002d34    program     static C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                WriteData   0x002da6    program     static C:\Users\orpaz\Desktop\Space-invaders\oled.c
+         Oled_WriteChar1x   0x002dce    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                 Menu_Run   0x003186    program     extern C:\Users\orpaz\Desktop\Space-invaders\menu.c
+        ___while_lbl00001   0x0031a8    program     static                          
+        ___while_lbl00003   0x0031f6    program     static                          
+        ___while_lbl00004   0x003200    program     static                          
+           ___if_lbl00005   0x003200    program     static                          
+       ___case_0_lbl00010   0x00321c    program     static                          
+         ___else_lbl00009   0x0032fa    program     static                          
+           ___if_lbl00007   0x0033e0    program     static                          
+           ___if_lbl00008   0x0033e0    program     static                          
+       ___case_1_lbl00012   0x0033e2    program     static                          
+           ___if_lbl00011   0x003406    program     static                          
+       ___case_2_lbl00014   0x003412    program     static                          
+               __tmplbl_2   0x003466    program     static                          
+           ___if_lbl00013   0x00347a    program     static                          
+       ___case_3_lbl00016   0x003486    program     static                          
+           ___if_lbl00015   0x0034fe    program     static                          
+   ___switchexit_lbl00006   0x003500    program     static                          
+       ___return_lbl00000   0x003504    program     static                          
+        ___while_lbl00002   0x003504    program     static                          
+                Menu_Show   0x003518    program     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+              Static_menu   0x003602    program     extern C:\Users\orpaz\Desktop\Space-invaders\menu.c
+                  RomRead   0x0038f6    program     extern C:\Users\orpaz\Desktop\Space-invaders\EEPROM.c
+          ___for_lbl00003   0x003950    program     static                          
+               __tmplbl_0   0x003970    program     static                          
+          ___for_lbl00001   0x003998    program     static                          
+       ___return_lbl00000   0x0039a2    program     static                          
+          ___for_lbl00002   0x0039a2    program     static                          
+                 RomWrite   0x0039b6    program     extern C:\Users\orpaz\Desktop\Space-invaders\EEPROM.c
+        ___while_lbl00005   0x0039ce    program     static                          
+          ___for_lbl00009   0x003a0e    program     static                          
+          ___for_lbl00007   0x003ad4    program     static                          
+          ___for_lbl00008   0x003ae8    program     static                          
+           ___if_lbl00010   0x003b0e    program     static                          
+          ___for_lbl00013   0x003b30    program     static                          
+          ___for_lbl00011   0x003bf6    program     static                          
+          ___for_lbl00012   0x003c0a    program     static                          
+           ___if_lbl00014   0x003c30    program     static                          
+       ___return_lbl00004   0x003c32    program     static                          
+        ___while_lbl00006   0x003c32    program     static                          
+                RomDelete   0x003c46    program     extern C:\Users\orpaz\Desktop\Space-invaders\EEPROM.c
+              g_AlienFont   0x003cb2    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                g_pucFont   0x003e8d    program     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+              BMA150_Init   0x004068    program     extern C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+           ___if_lbl00001   0x0040ae    program     static                          
+       ___return_lbl00000   0x004132    program     static                          
+              SpiPinRemap   0x004146    program     static C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+         BMA150_WriteByte   0x00416a    program     extern C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+          BMA150_ReadByte   0x0041ce    program     extern C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+             BMA150_Delay   0x0041fe    program     static C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+            BMA150_GetXYZ   0x004244    program     extern C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+                  InitADC   0x004400    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+                 InitCTMU   0x004428    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+              mTouch_Init   0x00443e    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+    mTouch_ReadButtonOnce   0x004446    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+        mTouch_ReadButton   0x0044d0    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+         mTouch_Calibrate   0x00455e    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+             mTouch_Delay   0x00469a    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+   mTouch_GetPushedButton   0x00469c    program     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+          HighPriorityIsr   0x00472a    program     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+           LowPriorityIsr   0x0047e6    program     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+                 WDT_init   0x0047e8    program     extern C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+              Main_RunWDT   0x0047ec    program     extern C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+        ___while_lbl00004   0x004812    program     static                          
+        ___while_lbl00002   0x004812    program     static                          
+        ___while_lbl00006   0x00487c    program     static                          
+        ___while_lbl00005   0x00487c    program     static                          
+        ___while_lbl00007   0x004886    program     static                          
+        ___while_lbl00003   0x004888    program     static                          
+       ___return_lbl00001   0x004888    program     static                          
+                  sprintf   0x00489c    program     extern C:\MCC18\src\traditional\stdclib\sprintf.c
+                 FXD1616S   0x004948    program     extern C:\MCC18\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x00495a    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                   D1616S   0x00496a    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x004974    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x004978    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x00498a    program     static C:\MCC18\src\traditional\math\fxd1616s.asm
+                 FXM1616S   0x004994    program     extern C:\MCC18\src\traditional\math\fxm1616s.asm
+               TSIGN1616A   0x0049e0    program     static C:\MCC18\src\traditional\math\fxm1616s.asm
+                _do_cinit   0x0049ee    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     test   0x004a08    program     static                          
+                copy_loop   0x004a60    program     static                          
+            copy_one_byte   0x004a66    program     static                          
+             done_copying   0x004a74    program     static                          
+       ___return_lbl00002   0x004a8a    program     static                          
+                     done   0x004a8a    program     static                          
+               Timer_init   0x004a8c    program     extern C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+              Timer_delay   0x004aa2    program     extern C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+               Timer_stop   0x004b24    program     extern C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                     putc   0x004b28    program     extern C:\MCC18\src\traditional\stdclib\putc.c
+                  FXM3232   0x004bac    program     extern C:\MCC18\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x004c1a    program     static                          
+                   strlen   0x004c1c    program     extern C:\MCC18\src\traditional\stdclib\strlen.asm
+                    jLoop   0x004c2c    program     static C:\MCC18\src\traditional\stdclib\strlen.asm
+                     jEnd   0x004c36    program     static C:\MCC18\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x004c38    program     extern C:\MCC18\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x004c56    program     static C:\MCC18\src\traditional\stdclib\slenpgm.asm
+                   _2jEnd   0x004c6c    program     static C:\MCC18\src\traditional\stdclib\slenpgm.asm
+                     jEnd   0x004c6e    program     static C:\MCC18\src\traditional\stdclib\slenpgm.asm
+                 FXD3232U   0x004c82    program     extern C:\MCC18\src\traditional\math\fxd3232u.c
+                     loop   0x004c90    program     static                          
+                   _false   0x004cc4    program     static                          
+       ___return_lbl00000   0x004cc8    program     static                          
+                 FXD1616U   0x004cca    program     extern C:\MCC18\src\traditional\math\fxd1616u.c
+                     loop   0x004cd4    program     static                          
+                  endloop   0x004cf0    program     static                          
+       ___return_lbl00000   0x004cf4    program     static                          
+                  isdigit   0x004cf6    program     extern C:\MCC18\src\traditional\stdclib\isdigit.asm
+                   jMatch   0x004d16    program     static C:\MCC18\src\traditional\stdclib\isdigit.asm
+                 jNoMatch   0x004d18    program     static C:\MCC18\src\traditional\stdclib\isdigit.asm
+                 _startup   0x004d1a    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     loop   0x004d2a    program     static                          
+       ___return_lbl00001   0x004d34    program     static                          
+              _usart_putc   0x004d36    program     extern C:\MCC18\src\pmc_common\USART\_usartpc.asm
+                     loop   0x004d46    program     static C:\MCC18\src\pmc_common\USART\_usartpc.asm
+               __string_9   0x004d52    program     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+               __string_9   0x004d55    program     static C:\Users\orpaz\Desktop\Space-invaders\Game.c
+               __string_0   0x004d63    program     static C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+                 s_digits   0x004d66    program     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+          PushButton_Init   0x004d78    program     extern C:\Users\orpaz\Desktop\Space-invaders\PushButton.c
+            __zero_memory   0x004d86    program     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               clear_loop   0x004d8c    program     static C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     main   0x004d94    program     extern C:\Users\orpaz\Desktop\Space-invaders\main.c
+               __config_0   0x00fffb    program     static C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+                     SIGN   0x000000       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000001       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                  __REMB3   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB0   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB0   0x000009       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __BARGB3   0x00000b       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB0   0x00000e       data     extern C:\MCC18\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __TEMPB3   0x000010       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000011       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000012       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                   __TEMP   0x000013       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                 __TEMPB0   0x000013       data     extern C:\MCC18\src\traditional\math\temparg.asm
+                  __tmp_0   0x000014       data     static C:\MCC18\src\traditional\stdclib\sprintf.c
+                  __tmp_0   0x000014       data     static C:\MCC18\src\traditional\stdclib\vfprintf.c
+                  __tmp_0   0x000014       data     static C:\MCC18\src\traditional\stdclib\putc.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\BMA150.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\EEPROM.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\Game.c
+                  __tmp_0   0x000014       data     static C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+                    sMenu   0x000060       data     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+                        x   0x0000d3       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                        t   0x0000d5       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                       Ms   0x0000d7       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                        S   0x0000d9       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                        M   0x0000db       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                        H   0x0000dd       data     static C:\Users\orpaz\Desktop\Space-invaders\Timer.c
+                   _color   0x0000df       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                 _clipRgn   0x0000e0       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                _clipLeft   0x0000e2       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                 _clipTop   0x0000e4       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+               _clipRight   0x0000e6       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+              _clipBottom   0x0000e8       data     extern C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                     prom   0x0000ea       data     static C:\MCC18\src\traditional\startup\c018i.c
+                curr_byte   0x0000ed       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x0000ef       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 data_ptr   0x0000f1       data     static C:\MCC18\src\traditional\startup\c018i.c
+                     data   0x0000f4       data     static C:\Users\orpaz\Desktop\Space-invaders\Game.c
+ g_mTouchCalibrationITRIM   0x0000fa       data     extern C:\Users\orpaz\Desktop\Space-invaders\mtouch.c
+                     data   0x0000fe       data     static C:\Users\orpaz\Desktop\Space-invaders\menu.c
+            pbPressedFlag   0x000e00       data     extern C:\Users\orpaz\Desktop\Space-invaders\isr.c
+                        x   0x000e02       data     static C:\Users\orpaz\Desktop\Space-invaders\WDT.c
+                       Ms   0x000e04       data     static C:\Users\orpaz\Desktop\Space-invaders\Game.c
+                     mode   0x000e06       data     static C:\Users\orpaz\Desktop\Space-invaders\oled.c
+                    RPOR0   0x000ec6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR1   0x000ec7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR2   0x000ec8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR3   0x000ec9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR4   0x000eca       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR5   0x000ecb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR6   0x000ecc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR7   0x000ecd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR8   0x000ece       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RPOR9   0x000ecf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR10   0x000ed0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR11   0x000ed1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR12   0x000ed2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR13   0x000ed3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR17   0x000ed7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR18   0x000ed8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR19   0x000ed9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR20   0x000eda       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR21   0x000edb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR22   0x000edc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR23   0x000edd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPOR24   0x000ede       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR1   0x000ee7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR2   0x000ee8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR3   0x000ee9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR4   0x000eea       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR6   0x000eec       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR7   0x000eed       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RPINR8   0x000eee       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR12   0x000ef2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR13   0x000ef3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR16   0x000ef6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR17   0x000ef7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR21   0x000efb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR22   0x000efc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR23   0x000efd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RPINR24   0x000efe       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PPSCON   0x000eff       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               PPSCONbits   0x000eff       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP0bits   0x000f26       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP0   0x000f26       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP1bits   0x000f27       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP1   0x000f27       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP2   0x000f28       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP2bits   0x000f28       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP3   0x000f29       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP3bits   0x000f29       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP4bits   0x000f2a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP4   0x000f2a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP5bits   0x000f2b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP5   0x000f2b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP6bits   0x000f2c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP6   0x000f2c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP7   0x000f2d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP7bits   0x000f2d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP8   0x000f2e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP8bits   0x000f2e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEP9   0x000f2f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEP9bits   0x000f2f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP10bits   0x000f30       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP10   0x000f30       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP11   0x000f31       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP11bits   0x000f31       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP12bits   0x000f32       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP12   0x000f32       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP13   0x000f33       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP13bits   0x000f33       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP14   0x000f34       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP14bits   0x000f34       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UEP15   0x000f35       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UEP15bits   0x000f35       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  UIEbits   0x000f36       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      UIE   0x000f36       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEIE   0x000f37       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEIEbits   0x000f37       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UADDR   0x000f38       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UADDRbits   0x000f38       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UCFG   0x000f39       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UCFGbits   0x000f39       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PADCFG1   0x000f3c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PADCFG1bits   0x000f3c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  REFOCON   0x000f3d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              REFOCONbits   0x000f3d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RTCCAL   0x000f3e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               RTCCALbits   0x000f3e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               RTCCFGbits   0x000f3f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RTCCFG   0x000f3f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ODCON3bits   0x000f40       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ODCON3   0x000f40       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ODCON2bits   0x000f41       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ODCON2   0x000f41       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ODCON1   0x000f42       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ODCON1bits   0x000f42       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ANCON0bits   0x000f48       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ANCON0   0x000f48       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ANCON1   0x000f49       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ANCON1bits   0x000f49       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  DSWAKEL   0x000f4a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              DSWAKELbits   0x000f4a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              DSWAKEHbits   0x000f4b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  DSWAKEH   0x000f4b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               DSCONLbits   0x000f4c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DSCONL   0x000f4c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DSCONH   0x000f4d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               DSCONHbits   0x000f4d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DSGPR0   0x000f4e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DSGPR1   0x000f4f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TCLKCON   0x000f52       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              TCLKCONbits   0x000f52       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CVRCON   0x000f53       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               CVRCONbits   0x000f53       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMSTATLbits   0x000f54       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMSTATL   0x000f54       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMSTATH   0x000f55       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMSTATHbits   0x000f55       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PMEL   0x000f56       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMELbits   0x000f56       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PMEH   0x000f57       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMEHbits   0x000f57       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMDIN2L   0x000f58       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMDIN2H   0x000f59       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMDOUT2L   0x000f5a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMDOUT2H   0x000f5b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMMODEL   0x000f5c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMMODELbits   0x000f5c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMMODEHbits   0x000f5d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMMODEH   0x000f5d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PMCONL   0x000f5e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               PMCONLbits   0x000f5e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               PMCONHbits   0x000f5f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PMCONH   0x000f5f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UFRMLbits   0x000f60       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UFRML   0x000f60       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UFRM   0x000f60       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                UFRMHbits   0x000f61       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    UFRMH   0x000f61       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      UIR   0x000f62       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  UIRbits   0x000f62       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UEIR   0x000f63       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UEIRbits   0x000f63       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                USTATbits   0x000f64       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    USTAT   0x000f64       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 UCONbits   0x000f65       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     UCON   0x000f65       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               DMABCHbits   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DMABCH   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   DMABCL   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RXADDRH   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              RXADDRHbits   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RXADDRL   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              TXADDRHbits   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TXADDRH   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TXADDRL   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMDIN1L   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMDIN1H   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMDOUT1L   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMADDRL   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PMDOUT1H   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PMADDRH   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PMADDRHbits   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             CMSTATUSbits   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               CMSTATbits   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 CMSTATUS   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CMSTAT   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP2CON2bits   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP2CON2   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP2CON1bits   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP2CON1   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP2STATbits   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP2STAT   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSP2ADD   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSP2ADDbits   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSP2BUF   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      PR4   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              BAUDCTLbits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  BAUDCTL   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SPBRGH   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  HLVDCON   0x000f85       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              HLVDCONbits   0x000f85       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              DMACON2bits   0x000f86       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  DMACON2   0x000f86       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              DMACON1bits   0x000f88       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  DMACON1   0x000f88       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ALRMVALL   0x000f8e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ALRMVALH   0x000f8f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  ALRMRPT   0x000f90       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              ALRMRPTbits   0x000f90       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  ALRMCFG   0x000f91       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              ALRMCFGbits   0x000f91       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               T3GCONbits   0x000f97       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   T3GCON   0x000f97       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RTCVALL   0x000f98       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  RTCVALH   0x000f99       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               T1GCONbits   0x000f9a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   T1GCON   0x000f9a       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    SPBRG   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 CTMUICON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             CTMUICONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 CTMUCONL   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             CTMUCONLbits   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 CTMUCONH   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             CTMUCONHbits   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             ECCP2CONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ECCP2CON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              CCP2CONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  CCP2CON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CCPR2L   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    CCPR2   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CCPR2H   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             ECCP2DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ECCP2DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PWM2CON   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PWM2CONbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  ECCP2AS   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              ECCP2ASbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PSTR2CON   0x000fb9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             PSTR2CONbits   0x000fb9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             ECCP1CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ECCP1CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  CCP1CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              CCP1CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CCPR1L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    CCPR1   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CCPR1H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              PWM1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PWM1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             ECCP1DELbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 ECCP1DEL   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  ECCP1AS   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              ECCP1ASbits   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 PSTR1CON   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             PSTR1CONbits   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   WDTCON   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               SSPADDbits   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              SSP1ADDbits   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F46J50.asm
+
+

@@ -1,0 +1,3 @@
+Warning[2058] C:\Users\orpaz\Desktop\Space-invaders\WDT.c 23 : call of function without prototype
+Warning[2066] C:\Users\orpaz\Desktop\Space-invaders\WDT.c 34 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\orpaz\Desktop\Space-invaders\WDT.c 35 : suspicious pointer conversion
