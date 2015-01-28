@@ -355,7 +355,8 @@ void about()
 	char line6[] = {"M MMMMMMM M"};
 	char line7[] = {"M M     M M"};
 	char line8[] = {"   MM MM   "};
-	char made1[] = {"Orpaz"};										
+	char made1[] = {"Orpaz"};
+    char made2[] = {"Goldstein};
 
 	Oled_Clear();
 	SetMode(Aliens);					 								// set write mode to aliens
